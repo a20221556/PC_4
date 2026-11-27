@@ -89,13 +89,14 @@ else:
     if grafico_seleccionado == 'Gráfico_1':
         st.subheader("📊 Gráfico 1: Lenguas aisladas")
         texto_5 = """
-        Interpretación del Gráfico 1
+        Para realizar el análisis del primer capítulo de Orgullo y Prejuicio, decidí convertir todas las palabras a minúsculas. También eliminé los signos de puntuación, como puntos, comas, guiones y signos de interrogación, ya que no son necesarios para el conteo de palabras.Por otro lado, seleccioné como stopwords los artículos, preposiciones, conjunciones y otras palabras que aparecen frecuentemente, pero que no aportan información importante para identificar los temas principales del capítulo.De esta manera, las palabras con mayor frecuencia destacan visualmente en la nube y ayudan a identificar los temas y conceptos que tienen más presencia en el capitulo. Finalmente, elegí un fondo crema y una paleta de tonos rosados y vino para personalizar la presentación del gráfico por que son colores que me gustan mucho
+
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_5}</div>", unsafe_allow_html=True)
 
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-                st.image("aisladas_base_datos.png", width=800)
+                st.image("nube.png", width=800)
 
     elif grafico_seleccionado == 'Gráfico_2':
         st.subheader("📊 Gráfico 2: Familias lingüísticas")
@@ -111,7 +112,7 @@ else:
     else:
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
         texto_7 = """
-        Interpretación del mapa
+        En este trabajo logramos analizar la información de los pilotos Nico Rosberg y Lewis Hamilton durante la temporada 2016 de Fórmula 1  utilizando Python y la base de datos que se nos proporcionó. Pude calcular los puntajes totales de ambos pilotos y se creó un mapa interactivo con la librería Folium en el que se representó informacion mas especifica como sus ciudades de nacimiento. Además incorporé marcadores personalizados con ventanas emergentes para msotrar sus fotografías, escuderías y puntajes. De esta manera se logró combinar el análisis de datos con la representación geográfica para asi facilitar la visualización de la información detallada y precisa ambos pilotos.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
             
