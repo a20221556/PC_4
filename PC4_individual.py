@@ -45,6 +45,7 @@ elif  opciones == 'Experiencia':
    La programación me ha enseñado a tener mas opaciencia, a ser perseverante y sobre todo, a no rendirme cuando algo no me sale a la primera. También he aprendido que los problemas se pueden resolver paso a paso y que equivocarse es parte del proceso. Me ha ayudado a desarrollar una forma mas lógica y estructurada de pensar.
    Lo que mas me gusta de programar es que puedes crear cosas desde cero y encontrar muchas maneras de resolver un mismo problema. Aunque todavía me cuesta bastante descubrir cómo unas cuantas líneas de código pueden convertirse en algo que funciona y que puede ser útil.
    En el futuro me gustaría poder aplicar la programación a proyectos relacionados con la publicidad y la comunicación. Me gustaría desarrollar aplicaciones, plataformas digitales o herramientas que ayuden a las personas y que respondan a necesidades reales. El aprender de programación considero que me puede complementar mucho en mi carrera y abrirme muchas oportunidades.
+   """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
     
     # Formato YouTube
@@ -88,8 +89,12 @@ else:
     
     if grafico_seleccionado == 'Gráfico_1':
         st.subheader("📊 Gráfico 1: Lenguas aisladas")
-        texto_5 = """ Para realizar el análisis del primer capítulo de Orgullo y Prejuicio, decidí convertir todas las palabras a minúsculas. También eliminé los signos de puntuación, como puntos, comas, guiones y signos de interrogación, ya que no son necesarios para el conteo de palabras.Por otro lado, seleccioné como stopwords los artículos, preposiciones, conjunciones y otras palabras que aparecen frecuentemente, pero que no aportan información importante para identificar los temas principales del capítulo.De esta manera, las palabras con mayor frecuencia destacan visualmente en la nube y ayudan a identificar los temas y conceptos que tienen más presencia en el capitulo. Finalmente, elegí un fondo crema y una paleta de tonos rosados y vino para personalizar la presentación del gráfico por que son colores que me gustan mucho
-
+        texto_5 = """ 
+        Para realizar el análisis del primer capítulo de Orgullo y Prejuicio, decidí convertir todas las palabras a minúsculas.     
+        También eliminé los signos de puntuación, como puntos, comas, guiones y signos de interrogación, ya que no son necesarios para el conteo de palabras.
+        Por otro lado, seleccioné como stopwords los artículos, preposiciones, conjunciones y otras palabras que aparecen frecuentemente, pero que no aportan información    
+        importante para identificar los temas principales del capítulo. De esta manera, las palabras con mayor frecuencia destacan visualmente en la nube y ayudan a identificar los temas y conceptos que tienen más presencia en el capitulo. 
+        Finalmente, elegí un fondo crema y una paleta de tonos rosados y vino para personalizar la presentación del gráfico por que son colores que me gustan mucho
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_5}</div>", unsafe_allow_html=True)
 
