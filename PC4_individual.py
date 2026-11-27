@@ -69,7 +69,7 @@ else:
     
     # Aquí debes poner tus 3 gráficos y tu mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
-    graficos = ['Gráfico_1', 'Gráfico_2', 'Mapa_1'] 
+    graficos = ['Gráfico_1', 'Gráfico_2', "Gráfico_3", "Gráfico_4",'Mapa_1'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
     
     if grafico_seleccionado == 'Gráfico_1':
@@ -96,18 +96,40 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("lengua_familia_GB.png", width=800)
+            st.image("histograma.png", width=800)
+
+    elif grafico_seleccionado == 'Gráfico_3':
+        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+        texto_7 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("histograma.png", width=800)
+
+    elif grafico_seleccionado == 'Gráfico_4':
+        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+        texto_8 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("histograma.png", width=800)
     
     else:
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
-        texto_7 = """
+        texto_9 = """
         En este trabajo logramos analizar la información de los pilotos Nico Rosberg y Lewis Hamilton durante la temporada 2016 de Fórmula 1 
         utilizando Python y la base de datos que se nos proporcionó. Pude calcular los puntajes totales de ambos pilotos y se creó un mapa 
         interactivo con la librería Folium en el que se representó informacion mas especifica como sus ciudades de nacimiento. 
         Además incorporé marcadores personalizados con ventanas emergentes para msotrar sus fotografías, escuderías y puntajes. 
         De esta manera se logró combinar el análisis de datos con la representación geográfica para asi facilitar la visualización de la información detallada y precisa ambos pilotos.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
             
         with open("mapa.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
