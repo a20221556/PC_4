@@ -111,7 +111,11 @@ else:
     else:
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
         texto_7 = """
-        En este trabajo logramos analizar la información de los pilotos Nico Rosberg y Lewis Hamilton durante la temporada 2016 de Fórmula 1  utilizando Python y la base de datos que se nos proporcionó. Pude calcular los puntajes totales de ambos pilotos y se creó un mapa interactivo con la librería Folium en el que se representó informacion mas especifica como sus ciudades de nacimiento. Además incorporé marcadores personalizados con ventanas emergentes para msotrar sus fotografías, escuderías y puntajes. De esta manera se logró combinar el análisis de datos con la representación geográfica para asi facilitar la visualización de la información detallada y precisa ambos pilotos.
+        En este trabajo logramos analizar la información de los pilotos Nico Rosberg y Lewis Hamilton durante la temporada 2016 de Fórmula 1 
+        utilizando Python y la base de datos que se nos proporcionó. Pude calcular los puntajes totales de ambos pilotos y se creó un mapa 
+        interactivo con la librería Folium en el que se representó informacion mas especifica como sus ciudades de nacimiento. 
+        Además incorporé marcadores personalizados con ventanas emergentes para msotrar sus fotografías, escuderías y puntajes. 
+        De esta manera se logró combinar el análisis de datos con la representación geográfica para asi facilitar la visualización de la información detallada y precisa ambos pilotos.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
             
