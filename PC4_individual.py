@@ -38,23 +38,36 @@ if opciones == 'Presentación':
     
 elif  opciones == 'Experiencia':
 
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'> Lo que aprendí en el camino 💻</h1>", unsafe_allow_html=True)
 
     texto_3 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio? 
-    ¿Qué te ha enseñado la programación? 
-    ¿Qué te gusta de programar? 
-    ¿Qué te gustaría hacer con la programación en el futuro?
-    """
+   Al principio, sinceramene me sentí bastante perdida. Me ha costado muchísimo aprender programación porque era algo nuevo para mí y muchas veces no entendía lo que estaba haciendo. Me sentía confundida, sobre todo cuando aparecían códigos, errores o ejercicios que no sabía como resolver. Hubo momentos en los que me frustré porque sentía que no avanzaba, pero poco a poco fui tratando de entenderlo y tener mas paciencia en mi proceso.
+   La programación me ha enseñado a tener mas opaciencia, a ser perseverante y sobre todo, a no rendirme cuando algo no me sale a la primera. También he aprendido que los problemas se pueden resolver paso a paso y que equivocarse es parte del proceso. Me ha ayudado a desarrollar una forma mas lógica y estructurada de pensar.
+   Lo que mas me gusta de programar es que puedes crear cosas desde cero y encontrar muchas maneras de resolver un mismo problema. Aunque todavía me cuesta bastante descubrir cómo unas cuantas líneas de código pueden convertirse en algo que funciona y que puede ser útil.
+   En el futuro me gustaría poder aplicar la programación a proyectos relacionados con la publicidad y la comunicación. Me gustaría desarrollar aplicaciones, plataformas digitales o herramientas que ayuden a las personas y que respondan a necesidades reales. El aprender de programación considero que me puede complementar mucho en mi carrera y abrirme muchas oportunidades.
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
     
     # Formato YouTube
-    st.subheader("🎥 Título apropiado video 1")
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
-    
+    st.subheader("🎥 Mi primer acercamiento a la programación")
+    col1, col2, col3 = st.columns([1, 2, 1])
+
+    with col2:  
+        st.link_button("🎥 Texto del botón",
+                       "https://youtu.be/a1_ip4VrLvM?feature=shared",
+                       use_container_width=True
+            )
+
+        st.subheader("🎥 Mis aprendizajes en programación")
+    col1, col2, col3 = st.columns([1, 2, 1])
+
+    with col2:  
+        st.link_button("🎥 Texto del botón",
+                       "https://youtu.be/jbqsELWzYXo?feature=shared",
+                       use_container_width=True
+            )
+            
     # Formato Google Drive
-    st.subheader("🎥 Título apropiado video 2")
+    st.subheader("🎥 Mis aprendizajes en programación")
 
     col1, col2, col3 = st.columns([1, 2, 1])
 
