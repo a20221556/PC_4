@@ -52,7 +52,7 @@ elif  opciones == 'Experiencia':
     col1, col2, col3 = st.columns([1, 2, 1])
 
     with col2:  
-        st.link_button("🎥 Texto del botón",
+        st.link_button("🎥 Video 1",
                        "https://youtu.be/a1_ip4VrLvM?feature=shared",
                        use_container_width=True
             )
@@ -61,12 +61,12 @@ elif  opciones == 'Experiencia':
     col1, col2, col3 = st.columns([1, 2, 1])
 
     with col2:  
-        st.link_button("🎥 Texto del botón",
+        st.link_button("🎥 Video 2",
                        "https://youtu.be/jbqsELWzYXo?feature=shared",
                        use_container_width=True
             )
             
-    # Formato Google Drive
+    ## Formato Google Drive
     st.subheader("🎥 Mis aprendizajes en programación")
 
     col1, col2, col3 = st.columns([1, 2, 1])
