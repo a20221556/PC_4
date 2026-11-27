@@ -53,7 +53,7 @@ elif  opciones == 'Experiencia':
     col1, col2, col3 = st.columns([1, 2, 1])
 
     with col2:  
-        st.video("https://youtu.be/a1_ip4VrLvM?feature=shared")
+        st.video("https://www.youtube.com/watch?v=a1_ip4VrLvM")
 
         st.subheader("🎥 Mis aprendizajes en programación")
     col1, col2, col3 = st.columns([1, 2, 1])
