@@ -127,5 +127,5 @@ else:
         with open("mapa.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
     
-            components.html(html_content,height=600)
+        components.html(html_content,height=600)
     
