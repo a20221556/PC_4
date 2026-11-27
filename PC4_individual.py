@@ -50,18 +50,16 @@ elif  opciones == 'Experiencia':
     
     # Formato YouTube
     st.subheader("🎥 Mi primer acercamiento a la programación")
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1, 7, 1])
 
     with col2:  
         st.video("https://www.youtube.com/watch?v=a1_ip4VrLvM")
 
         st.subheader("🎥 Mis aprendizajes en programación")
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1, 7, 1])
 
     with col2:  
-        st.video("https://youtu.be/jbqsELWzYXo?feature=shared",
-                       use_container_width=True
-            )
+        st.video("https://youtu.be/jbqsELWzYXo")
             
     ## Formato Google Drive
     st.subheader("🎥 Mis aprendizajes en programación")
